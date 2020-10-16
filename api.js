@@ -46,7 +46,7 @@ app.get('/cuisine',(req,res) => {
 })
 
 //restaurents
-app.get('/restaurents',(req,res) => {
+app.get('/restaurent',(req,res) => {
     var condition = {};
     if(req.query.city && req.query.mealtype){
         condition = {city:req.query.city,"type.mealtype":req.query.mealtype}
